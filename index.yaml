@@ -1,0 +1,43 @@
+jobs:
+
+- job: Ubuntu_1604
+  pool:
+    vmImage: ubuntu-16.04
+  steps:
+  - template: ./steps.yaml
+
+- job: Ubuntu_1804
+  pool:
+    vmImage: ubuntu-18.04
+  steps:
+  - template: ./steps.yaml
+
+- job: Ubuntu_2004
+  pool:
+    vmImage: ubuntu-20.04
+  steps:
+  - template: ./steps.yaml
+
+- job: VS2017
+  pool:
+    vmImage: ubuntu-16.04
+  steps:
+  - template: ./steps.yaml
+
+- job: VS2019
+  pool:
+    vmImage: ubuntu-16.04
+  steps:
+  - template: ./steps.yaml
+
+- job: Macos_1014
+  pool:
+    vmImage: macos-10.14
+  steps:
+  - template: ./steps.yaml
+
+- job: Macos_1015
+  pool:
+    vmImage: macos-10.15
+  steps:
+  - template: ./steps.yaml
